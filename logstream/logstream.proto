@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "github.com/syhrz/alpha-login-monitor/logstream;logstream"; 
+
+package logstream;
+
+// The request message containing the user name and host.
+message LogStreamRequest {
+  string hostname = 1;
+  int32	attemp = 2;
+}
+
+// The response message
+message LogStreamResponse {
+  string message = 1;
+}
+
+// The log streamer contract
+service LogStreamer {
+    rpc StreamLog (LogStreamRequest) returns (LogStreamResponse) {}
+  }

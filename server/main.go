@@ -4,6 +4,7 @@ import (
 	"context"
 	"log"
 	"net"
+	"os"
 
 	pb "../logstream"
 
@@ -13,6 +14,9 @@ import (
 const (
 	// defaultServerPort is the default port that used by the server.
 	defaultServerPort = ":5050"
+
+	// defaultServerEndpoint
+	defaultServerEndpoint = "localhost"
 )
 
 // server is used to implement logstream.UnimplementedLogStreamerServer.
@@ -27,7 +31,20 @@ func (s *server) StreamLog(ctx context.Context, in *pb.LogStreamRequest) (*pb.Lo
 }
 
 func main() {
-	lis, err := net.Listen("tcp", defaultServerPort)
+	serverEndpoint := os.Getenv("ALPHA_SERVER_ENDPOINT")
+	serverPort := os.Getenv("ALPHA_SERVER_PORT")
+
+	if serverEndpoint == "" {
+		serverEndpoint = defaultServerEndpoint
+	}
+
+	if serverPort == "" {
+		serverPort = defaultServerPort
+	}
+
+	log.Printf("Alpha server started at %s%s\n", serverEndpoint, serverPort)
+
+	lis, err := net.Listen("tcp", serverPort)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}

@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"os"
+	"regexp"
 	"time"
 
 	pb "../logstream"
@@ -63,28 +63,35 @@ func main() {
 	log.Printf("Client started at %s", thisClientHostname)
 
 	for line := range authLogStream.Lines {
-		fmt.Println(line.Text)
-
-		// Set up a connection to the server.
-		conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
-		if err != nil {
-			log.Fatalf("did not connect: %v", err)
-		} else {
-			log.Printf("Client connected to %s%s", serverEndpoint, serverPort)
-		}
-		defer conn.Close()
-		c := pb.NewLogStreamerClient(conn)
-
-		// Contact the server and print out its response.
 		thisLoginAttemp := defaultLoginAttempt
+		getLoginAttemp, err := regexp.MatchString("Accepted*", line.Text)
 
-		ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-		defer cancel()
-		r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: thisClientHostname, Attemp: thisLoginAttemp})
-
-		if err != nil {
-			log.Fatalf("could not stream: %v", err)
+		if getLoginAttemp {
+			thisLoginAttemp++
+			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
 		}
-		log.Printf("Response: %s", r.GetMessage())
+
+		if thisLoginAttemp > 0 {
+			// Set up a connection to the server.
+			conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
+			if err != nil {
+				log.Fatalf("did not connect: %v", err)
+			} else {
+				log.Printf("Client connected to %s%s", serverEndpoint, serverPort)
+			}
+			defer conn.Close()
+			c := pb.NewLogStreamerClient(conn)
+
+			// Contact the server and print out its response.
+
+			ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+			defer cancel()
+			r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: thisClientHostname, Attemp: thisLoginAttemp})
+
+			if err != nil {
+				log.Fatalf("could not stream: %v", err)
+			}
+			log.Printf("Response: %s", r.GetMessage())
+		}
 	}
 }

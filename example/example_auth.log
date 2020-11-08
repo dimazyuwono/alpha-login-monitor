@@ -1,0 +1,782 @@
+Oct  3 07:52:55 ubuntu systemd-logind[838]: New seat seat0.
+Oct  3 07:52:55 ubuntu systemd-logind[838]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct  3 07:52:55 ubuntu systemd-logind[838]: Watching system buttons on /dev/input/event4 (AT Translated Set 2 keyboard)
+Oct  3 07:53:11 ubuntu useradd[1386]: new group: name=ubuntu, GID=1000
+Oct  3 07:53:11 ubuntu useradd[1386]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'adm'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'dialout'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'cdrom'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'floppy'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'sudo'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'audio'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'dip'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'video'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'plugdev'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'netdev'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to group 'lxd'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'adm'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'dialout'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'cdrom'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'floppy'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'sudo'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'audio'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'dip'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'video'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'plugdev'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'netdev'
+Oct  3 07:53:11 ubuntu useradd[1386]: add 'ubuntu' to shadow group 'lxd'
+Oct  3 07:53:12 ubuntu passwd[1394]: password for 'ubuntu' changed by 'root'
+Oct  3 07:53:17 ubuntu sshd[1577]: Server listening on 0.0.0.0 port 22.
+Oct  3 07:53:17 ubuntu sshd[1577]: Server listening on :: port 22.
+Oct  3 07:53:20 ubuntu sshd[1577]: Received signal 15; terminating.
+Oct  3 07:53:20 ubuntu sshd[1624]: Server listening on 0.0.0.0 port 22.
+Oct  3 07:53:20 ubuntu sshd[1624]: Server listening on :: port 22.
+Oct  3 07:53:41 ubuntu sshd[1672]: Accepted publickey for ubuntu from 5.6.7.8 port 53426 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:53:41 ubuntu sshd[1672]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:53:41 ubuntu systemd-logind[838]: New session 1 of user ubuntu.
+Oct  3 07:53:41 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:54:21 ubuntu sshd[1763]: Connection closed by 4.3.2.1 port 54834 [preauth]
+Oct  3 07:54:31 ubuntu sshd[1751]: Received disconnect from 5.6.7.8 port 53426:11: disconnected by user
+Oct  3 07:54:31 ubuntu sshd[1751]: Disconnected from 5.6.7.8 port 53426
+Oct  3 07:54:31 ubuntu sshd[1672]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:54:31 ubuntu systemd-logind[838]: Removed session 1.
+Oct  3 07:55:33 ubuntu sshd[1775]: Connection closed by 4.3.2.1 port 43042 [preauth]
+Oct  3 07:55:37 ubuntu sshd[1772]: Accepted publickey for ubuntu from 5.6.7.8 port 53461 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:55:37 ubuntu sshd[1772]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:37 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:37 ubuntu systemd-logind[838]: New session 2 of user ubuntu.
+Oct  3 07:55:40 ubuntu sshd[1812]: Received disconnect from 5.6.7.8 port 53461:11: disconnected by user
+Oct  3 07:55:40 ubuntu sshd[1812]: Disconnected from 5.6.7.8 port 53461
+Oct  3 07:55:40 ubuntu sshd[1772]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:55:40 ubuntu systemd-logind[838]: Removed session 2.
+Oct  3 07:55:40 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:55:48 ubuntu sshd[1821]: Accepted publickey for ubuntu from 5.6.7.8 port 53509 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:55:48 ubuntu sshd[1821]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:48 ubuntu systemd-logind[838]: New session 3 of user ubuntu.
+Oct  3 07:55:48 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:52 ubuntu sshd[1857]: Received disconnect from 5.6.7.8 port 53509:11: disconnected by user
+Oct  3 07:55:52 ubuntu sshd[1857]: Disconnected from 5.6.7.8 port 53509
+Oct  3 07:55:52 ubuntu sshd[1821]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:55:52 ubuntu systemd-logind[838]: Removed session 3.
+Oct  3 07:55:52 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:55:54 ubuntu sshd[1866]: Accepted publickey for ubuntu from 5.6.7.8 port 53518 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:55:54 ubuntu sshd[1866]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:54 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:55:54 ubuntu systemd-logind[838]: New session 4 of user ubuntu.
+Oct  3 07:56:23 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/hostname elk-himirror-nkg-cloud
+Oct  3 07:56:23 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:56:23 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:56:23 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/hostname
+Oct  3 07:56:23 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:56:23 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:56:24 ubuntu sshd[1904]: Received disconnect from 5.6.7.8 port 53518:11: disconnected by user
+Oct  3 07:56:24 ubuntu sshd[1904]: Disconnected from 5.6.7.8 port 53518
+Oct  3 07:56:24 ubuntu sshd[1866]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:56:24 ubuntu systemd-logind[838]: Removed session 4.
+Oct  3 07:56:24 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:56:27 ubuntu sshd[1932]: Accepted publickey for ubuntu from 5.6.7.8 port 53537 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:56:27 ubuntu sshd[1932]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:56:27 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:56:27 ubuntu systemd-logind[838]: New session 5 of user ubuntu.
+Oct  3 07:56:28 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee -a /etc/hosts
+Oct  3 07:56:28 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:56:28 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:56:32 ubuntu sshd[1968]: Received disconnect from 5.6.7.8 port 53537:11: disconnected by user
+Oct  3 07:56:32 ubuntu sshd[1968]: Disconnected from 5.6.7.8 port 53537
+Oct  3 07:56:32 ubuntu sshd[1932]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:56:32 ubuntu systemd-logind[838]: Removed session 5.
+Oct  3 07:56:32 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:56:40 ubuntu sshd[1982]: Accepted publickey for ubuntu from 5.6.7.8 port 53545 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:56:40 ubuntu sshd[1982]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:56:40 ubuntu systemd-logind[838]: New session 6 of user ubuntu.
+Oct  3 07:56:40 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:56:41 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct  3 07:56:41 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:56:43 ubuntu sshd[2175]: Connection closed by 4.3.2.1 port 59482 [preauth]
+Oct  3 07:56:52 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:56:52 ubuntu sshd[2019]: Received disconnect from 5.6.7.8 port 53545:11: disconnected by user
+Oct  3 07:56:52 ubuntu sshd[2019]: Disconnected from 5.6.7.8 port 53545
+Oct  3 07:56:52 ubuntu sshd[1982]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:56:52 ubuntu systemd-logind[838]: Removed session 6.
+Oct  3 07:56:52 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:57:05 ubuntu sshd[2215]: Accepted publickey for ubuntu from 5.6.7.8 port 53558 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:57:05 ubuntu sshd[2215]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:57:05 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:57:05 ubuntu systemd-logind[838]: New session 7 of user ubuntu.
+Oct  3 07:57:07 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl
+Oct  3 07:57:07 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:08 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:09 ubuntu sshd[2254]: Received disconnect from 5.6.7.8 port 53558:11: disconnected by user
+Oct  3 07:57:09 ubuntu sshd[2254]: Disconnected from 5.6.7.8 port 53558
+Oct  3 07:57:09 ubuntu sshd[2215]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:57:09 ubuntu systemd-logind[838]: Removed session 7.
+Oct  3 07:57:30 ubuntu sshd[2266]: Accepted publickey for ubuntu from 5.6.7.8 port 53568 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:57:30 ubuntu sshd[2266]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:57:30 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:57:30 ubuntu systemd-logind[838]: New session 8 of user ubuntu.
+Oct  3 07:57:31 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c modprobe aufs
+Oct  3 07:57:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:31 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+Oct  3 07:57:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:33 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c apt-key adv -k 58118E89F3A912897C070ADBF76221572C52609D >/dev/null
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:33 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c mkdir -p /etc/apt/sources.list.d
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:33 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-xenial main > /etc/apt/sources.list.d/docker.list
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:57:33 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c sleep 3; apt-get update; apt-get install -y -q docker-engine
+Oct  3 07:57:33 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:57:54 ubuntu sshd[2812]: Connection closed by 4.3.2.1 port 47691 [preauth]
+Oct  3 07:57:59 ubuntu groupadd[3677]: group added to /etc/group: name=docker, GID=999
+Oct  3 07:57:59 ubuntu groupadd[3677]: group added to /etc/gshadow: name=docker
+Oct  3 07:57:59 ubuntu groupadd[3677]: new group: name=docker, GID=999
+Oct  3 07:58:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:05 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c docker version
+Oct  3 07:58:05 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:58:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:06 ubuntu sshd[2304]: Received disconnect from 5.6.7.8 port 53568:11: disconnected by user
+Oct  3 07:58:06 ubuntu sshd[2304]: Disconnected from 5.6.7.8 port 53568
+Oct  3 07:58:06 ubuntu sshd[2266]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:58:06 ubuntu systemd-logind[838]: Removed session 8.
+Oct  3 07:58:06 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:58:20 ubuntu sshd[4888]: Accepted publickey for ubuntu from 5.6.7.8 port 53610 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:58:20 ubuntu sshd[4888]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:20 ubuntu systemd-logind[838]: New session 9 of user ubuntu.
+Oct  3 07:58:20 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:21 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/docker version
+Oct  3 07:58:21 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:58:21 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:22 ubuntu sshd[4927]: Received disconnect from 5.6.7.8 port 53610:11: disconnected by user
+Oct  3 07:58:22 ubuntu sshd[4927]: Disconnected from 5.6.7.8 port 53610
+Oct  3 07:58:22 ubuntu sshd[4888]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:58:22 ubuntu systemd-logind[838]: Removed session 9.
+Oct  3 07:58:27 ubuntu sshd[4941]: Accepted publickey for ubuntu from 5.6.7.8 port 53622 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:58:27 ubuntu sshd[4941]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:27 ubuntu systemd-logind[838]: New session 10 of user ubuntu.
+Oct  3 07:58:27 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:29 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl -f stop docker
+Oct  3 07:58:29 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:58:30 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:32 ubuntu sshd[4978]: Received disconnect from 5.6.7.8 port 53622:11: disconnected by user
+Oct  3 07:58:32 ubuntu sshd[4978]: Disconnected from 5.6.7.8 port 53622
+Oct  3 07:58:32 ubuntu sshd[4941]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:58:32 ubuntu systemd-logind[838]: Removed session 10.
+Oct  3 07:58:40 ubuntu sshd[4990]: Accepted publickey for ubuntu from 5.6.7.8 port 53629 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:58:40 ubuntu sshd[4990]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:40 ubuntu systemd-logind[838]: New session 11 of user ubuntu.
+Oct  3 07:58:40 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:42 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/sbin/ip link delete docker0
+Oct  3 07:58:42 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:58:42 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:42 ubuntu sshd[5028]: Received disconnect from 5.6.7.8 port 53629:11: disconnected by user
+Oct  3 07:58:42 ubuntu sshd[5028]: Disconnected from 5.6.7.8 port 53629
+Oct  3 07:58:42 ubuntu sshd[4990]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:58:42 ubuntu systemd-logind[838]: Removed session 11.
+Oct  3 07:58:48 ubuntu sshd[5045]: Accepted publickey for ubuntu from 5.6.7.8 port 53636 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:58:48 ubuntu sshd[5045]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:48 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:58:48 ubuntu systemd-logind[838]: New session 12 of user ubuntu.
+Oct  3 07:58:49 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/docker/ca.pem
+Oct  3 07:58:49 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:58:49 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:58:50 ubuntu sshd[5082]: Received disconnect from 5.6.7.8 port 53636:11: disconnected by user
+Oct  3 07:58:50 ubuntu sshd[5082]: Disconnected from 5.6.7.8 port 53636
+Oct  3 07:58:50 ubuntu sshd[5045]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:58:50 ubuntu systemd-logind[838]: Removed session 12.
+Oct  3 07:58:50 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:59:02 ubuntu sshd[5094]: Accepted publickey for ubuntu from 5.6.7.8 port 53645 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:59:02 ubuntu sshd[5094]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:02 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:02 ubuntu systemd-logind[838]: New session 13 of user ubuntu.
+Oct  3 07:59:04 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/docker/server.pem
+Oct  3 07:59:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:59:04 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:59:04 ubuntu sshd[5135]: Connection closed by 4.3.2.1 port 35902 [preauth]
+Oct  3 07:59:06 ubuntu sshd[5130]: Received disconnect from 5.6.7.8 port 53645:11: disconnected by user
+Oct  3 07:59:06 ubuntu sshd[5130]: Disconnected from 5.6.7.8 port 53645
+Oct  3 07:59:06 ubuntu sshd[5094]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:59:06 ubuntu systemd-logind[838]: Removed session 13.
+Oct  3 07:59:06 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:59:26 ubuntu sshd[5144]: Accepted publickey for ubuntu from 5.6.7.8 port 53655 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:59:26 ubuntu sshd[5144]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:26 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:26 ubuntu systemd-logind[838]: New session 14 of user ubuntu.
+Oct  3 07:59:26 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/docker/server-key.pem
+Oct  3 07:59:26 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:59:26 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:59:27 ubuntu sshd[5182]: Received disconnect from 5.6.7.8 port 53655:11: disconnected by user
+Oct  3 07:59:27 ubuntu sshd[5182]: Disconnected from 5.6.7.8 port 53655
+Oct  3 07:59:27 ubuntu sshd[5144]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:59:27 ubuntu systemd-logind[838]: Removed session 14.
+Oct  3 07:59:27 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:59:50 ubuntu sshd[5195]: Accepted publickey for ubuntu from 5.6.7.8 port 53670 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:59:50 ubuntu sshd[5195]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:50 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:50 ubuntu systemd-logind[838]: New session 15 of user ubuntu.
+Oct  3 07:59:51 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/systemd/system/docker.service
+Oct  3 07:59:51 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 07:59:51 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 07:59:52 ubuntu sshd[5233]: Received disconnect from 5.6.7.8 port 53670:11: disconnected by user
+Oct  3 07:59:52 ubuntu sshd[5233]: Disconnected from 5.6.7.8 port 53670
+Oct  3 07:59:52 ubuntu sshd[5195]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 07:59:52 ubuntu systemd-logind[838]: Removed session 15.
+Oct  3 07:59:52 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 07:59:56 ubuntu sshd[5245]: Accepted publickey for ubuntu from 5.6.7.8 port 53686 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 07:59:56 ubuntu sshd[5245]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 07:59:56 ubuntu systemd-logind[838]: New session 16 of user ubuntu.
+Oct  3 07:59:56 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:00:00 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl daemon-reload
+Oct  3 08:00:00 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 08:00:00 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 08:00:01 ubuntu sshd[5282]: Received disconnect from 5.6.7.8 port 53686:11: disconnected by user
+Oct  3 08:00:01 ubuntu sshd[5282]: Disconnected from 5.6.7.8 port 53686
+Oct  3 08:00:01 ubuntu sshd[5245]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 08:00:01 ubuntu systemd-logind[838]: Removed session 16.
+Oct  3 08:00:01 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 08:00:13 ubuntu sshd[5310]: Accepted publickey for ubuntu from 5.6.7.8 port 53693 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 08:00:13 ubuntu sshd[5310]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:00:13 ubuntu systemd-logind[838]: New session 17 of user ubuntu.
+Oct  3 08:00:13 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:00:14 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl -f start docker
+Oct  3 08:00:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 08:00:15 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 08:00:15 ubuntu sshd[5348]: Received disconnect from 5.6.7.8 port 53693:11: disconnected by user
+Oct  3 08:00:15 ubuntu sshd[5348]: Disconnected from 5.6.7.8 port 53693
+Oct  3 08:00:15 ubuntu sshd[5310]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 08:00:15 ubuntu systemd-logind[838]: Removed session 17.
+Oct  3 08:00:15 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 08:00:16 ubuntu sshd[5377]: Connection closed by 4.3.2.1 port 52341 [preauth]
+Oct  3 08:00:39 ubuntu sshd[5481]: Accepted publickey for ubuntu from 5.6.7.8 port 53703 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 08:00:39 ubuntu sshd[5481]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:00:39 ubuntu systemd-logind[838]: New session 18 of user ubuntu.
+Oct  3 08:00:39 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:00:50 ubuntu sshd[5518]: Received disconnect from 5.6.7.8 port 53703:11: disconnected by user
+Oct  3 08:00:50 ubuntu sshd[5518]: Disconnected from 5.6.7.8 port 53703
+Oct  3 08:00:50 ubuntu sshd[5481]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 08:00:50 ubuntu systemd-logind[838]: Removed session 18.
+Oct  3 08:00:50 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 08:01:02 ubuntu sshd[5527]: Accepted publickey for ubuntu from 5.6.7.8 port 53722 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 08:01:02 ubuntu sshd[5527]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:01:02 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 08:01:02 ubuntu systemd-logind[838]: New session 19 of user ubuntu.
+Oct  3 08:01:02 ubuntu sudo:    ubuntu : TTY=unknown ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl -f enable docker
+Oct  3 08:01:02 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct  3 08:01:03 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 08:01:03 ubuntu sshd[5564]: Received disconnect from 5.6.7.8 port 53722:11: disconnected by user
+Oct  3 08:01:03 ubuntu sshd[5564]: Disconnected from 5.6.7.8 port 53722
+Oct  3 08:01:03 ubuntu sshd[5527]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 08:01:03 ubuntu systemd-logind[838]: Removed session 19.
+Oct  3 08:01:03 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 08:01:27 ubuntu sshd[5637]: Connection closed by 4.3.2.1 port 40544 [preauth]
+Oct  3 08:02:39 ubuntu sshd[5640]: Connection closed by 4.3.2.1 port 56982 [preauth]
+Oct  3 08:03:51 ubuntu sshd[5643]: Connection closed by 4.3.2.1 port 45191 [preauth]
+Oct  3 08:05:03 ubuntu sshd[5646]: Connection closed by 4.3.2.1 port 33400 [preauth]
+Oct  3 08:06:14 ubuntu sshd[5649]: Connection closed by 4.3.2.1 port 49840 [preauth]
+Oct  3 08:07:25 ubuntu sshd[5652]: Connection closed by 4.3.2.1 port 38049 [preauth]
+Oct  3 08:08:36 ubuntu sshd[5666]: Connection closed by 4.3.2.1 port 54492 [preauth]
+Oct  3 08:09:47 ubuntu sshd[5670]: Connection closed by 4.3.2.1 port 42704 [preauth]
+Oct  3 08:10:56 ubuntu sshd[5673]: Connection closed by 4.3.2.1 port 59142 [preauth]
+Oct  3 08:12:07 ubuntu sshd[5676]: Connection closed by 4.3.2.1 port 47350 [preauth]
+Oct  3 08:13:17 ubuntu sshd[5678]: Connection closed by 4.3.2.1 port 35564 [preauth]
+Oct  3 08:14:28 ubuntu sshd[5681]: Connection closed by 4.3.2.1 port 52006 [preauth]
+Oct  3 08:15:38 ubuntu sshd[5684]: Connection closed by 4.3.2.1 port 40216 [preauth]
+Oct  3 08:16:49 ubuntu sshd[5687]: Connection closed by 4.3.2.1 port 56657 [preauth]
+Oct  3 08:17:01 ubuntu CRON[5689]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 08:17:01 ubuntu CRON[5689]: pam_unix(cron:session): session closed for user root
+Oct  3 08:17:59 ubuntu sshd[5694]: Connection closed by 4.3.2.1 port 44866 [preauth]
+Oct  3 08:19:10 ubuntu sshd[5697]: Connection closed by 4.3.2.1 port 33081 [preauth]
+Oct  3 08:20:21 ubuntu sshd[5701]: Connection closed by 4.3.2.1 port 49523 [preauth]
+Oct  3 08:21:32 ubuntu sshd[5704]: Connection closed by 4.3.2.1 port 37729 [preauth]
+Oct  3 08:22:44 ubuntu sshd[5707]: Connection closed by 4.3.2.1 port 54174 [preauth]
+Oct  3 08:23:54 ubuntu sshd[5710]: Connection closed by 4.3.2.1 port 42382 [preauth]
+Oct  3 08:25:05 ubuntu sshd[5713]: Connection closed by 4.3.2.1 port 58822 [preauth]
+Oct  3 08:26:15 ubuntu sshd[5716]: Connection closed by 4.3.2.1 port 47029 [preauth]
+Oct  3 08:27:26 ubuntu sshd[5719]: Connection closed by 4.3.2.1 port 35242 [preauth]
+Oct  3 08:28:36 ubuntu sshd[5722]: Connection closed by 4.3.2.1 port 51685 [preauth]
+Oct  3 08:29:47 ubuntu sshd[5724]: Connection closed by 4.3.2.1 port 39896 [preauth]
+Oct  3 08:30:57 ubuntu sshd[5728]: Connection closed by 4.3.2.1 port 56339 [preauth]
+Oct  3 08:32:07 ubuntu sshd[5741]: Connection closed by 4.3.2.1 port 44548 [preauth]
+Oct  3 08:33:18 ubuntu sshd[5744]: Connection closed by 4.3.2.1 port 60989 [preauth]
+Oct  3 08:34:29 ubuntu sshd[5747]: Connection closed by 4.3.2.1 port 49199 [preauth]
+Oct  3 08:35:08 ubuntu sshd[5751]: Invalid user admin from 185.110.132.201
+Oct  3 08:35:08 ubuntu sshd[5751]: input_userauth_request: invalid user admin [preauth]
+Oct  3 08:35:08 ubuntu sshd[5751]: Received disconnect from 185.110.132.201 port 36124:11: Bye Bye [preauth]
+Oct  3 08:35:08 ubuntu sshd[5751]: Disconnected from 185.110.132.201 port 36124 [preauth]
+Oct  3 08:35:40 ubuntu sshd[5754]: Connection closed by 4.3.2.1 port 37408 [preauth]
+Oct  3 08:36:50 ubuntu sshd[5768]: Connection closed by 4.3.2.1 port 53850 [preauth]
+Oct  3 08:38:00 ubuntu sshd[5962]: Connection closed by 4.3.2.1 port 42059 [preauth]
+Oct  3 08:39:11 ubuntu sshd[6423]: Connection closed by 4.3.2.1 port 58506 [preauth]
+Oct  3 08:40:22 ubuntu sshd[6426]: Connection closed by 4.3.2.1 port 46717 [preauth]
+Oct  3 08:41:32 ubuntu sshd[9002]: Connection closed by 4.3.2.1 port 34928 [preauth]
+Oct  3 08:42:42 ubuntu sshd[9006]: Connection closed by 4.3.2.1 port 51368 [preauth]
+Oct  3 08:43:28 ubuntu sshd[9009]: Received disconnect from 121.18.238.114 port 45030:11:  [preauth]
+Oct  3 08:43:28 ubuntu sshd[9009]: Disconnected from 121.18.238.114 port 45030 [preauth]
+Oct  3 08:43:53 ubuntu sshd[9013]: Connection closed by 4.3.2.1 port 39580 [preauth]
+Oct  3 08:45:03 ubuntu sshd[9016]: Connection closed by 4.3.2.1 port 56021 [preauth]
+Oct  3 08:46:14 ubuntu sshd[9020]: Connection closed by 4.3.2.1 port 44230 [preauth]
+Oct  3 08:47:24 ubuntu sshd[9024]: Connection closed by 4.3.2.1 port 60671 [preauth]
+Oct  3 08:48:35 ubuntu sshd[9027]: Connection closed by 4.3.2.1 port 48887 [preauth]
+Oct  3 08:49:45 ubuntu sshd[9030]: Connection closed by 4.3.2.1 port 37097 [preauth]
+Oct  3 08:50:57 ubuntu sshd[9033]: Connection closed by 4.3.2.1 port 53538 [preauth]
+Oct  3 08:52:08 ubuntu sshd[9037]: Connection closed by 4.3.2.1 port 41745 [preauth]
+Oct  3 08:53:19 ubuntu sshd[9040]: Connection closed by 4.3.2.1 port 58185 [preauth]
+Oct  3 08:54:30 ubuntu sshd[9043]: Connection closed by 4.3.2.1 port 46395 [preauth]
+Oct  3 08:55:40 ubuntu sshd[9046]: Connection closed by 4.3.2.1 port 34603 [preauth]
+Oct  3 08:56:52 ubuntu sshd[9049]: Connection closed by 4.3.2.1 port 51041 [preauth]
+Oct  3 08:58:03 ubuntu sshd[9052]: Connection closed by 4.3.2.1 port 39250 [preauth]
+Oct  3 08:59:14 ubuntu sshd[9055]: Connection closed by 4.3.2.1 port 55693 [preauth]
+Oct  3 08:59:16 ubuntu sshd[9057]: Invalid user support from 185.110.132.201
+Oct  3 08:59:16 ubuntu sshd[9057]: input_userauth_request: invalid user support [preauth]
+Oct  3 08:59:17 ubuntu sshd[9057]: Received disconnect from 185.110.132.201 port 35361:11: Bye Bye [preauth]
+Oct  3 08:59:17 ubuntu sshd[9057]: Disconnected from 185.110.132.201 port 35361 [preauth]
+Oct  3 09:00:25 ubuntu sshd[9061]: Connection closed by 4.3.2.1 port 43900 [preauth]
+Oct  3 09:01:35 ubuntu sshd[9063]: Connection closed by 4.3.2.1 port 60339 [preauth]
+Oct  3 09:02:45 ubuntu sshd[9067]: Connection closed by 4.3.2.1 port 48547 [preauth]
+Oct  3 09:03:13 ubuntu sshd[9070]: Received disconnect from 221.194.47.224 port 59273:11:  [preauth]
+Oct  3 09:03:13 ubuntu sshd[9070]: Disconnected from 221.194.47.224 port 59273 [preauth]
+Oct  3 09:03:55 ubuntu sshd[9073]: Connection closed by 4.3.2.1 port 36759 [preauth]
+Oct  3 09:05:06 ubuntu sshd[9076]: Connection closed by 4.3.2.1 port 53201 [preauth]
+Oct  3 09:06:17 ubuntu sshd[9079]: Connection closed by 4.3.2.1 port 41408 [preauth]
+Oct  3 09:06:22 ubuntu sshd[9081]: Received disconnect from 121.18.238.104 port 40531:11:  [preauth]
+Oct  3 09:06:22 ubuntu sshd[9081]: Disconnected from 121.18.238.104 port 40531 [preauth]
+Oct  3 09:07:27 ubuntu sshd[9084]: Connection closed by 4.3.2.1 port 57850 [preauth]
+Oct  3 09:08:38 ubuntu sshd[9087]: Connection closed by 4.3.2.1 port 46064 [preauth]
+Oct  3 09:09:49 ubuntu sshd[9090]: Connection closed by 4.3.2.1 port 34272 [preauth]
+Oct  3 09:11:00 ubuntu sshd[9093]: Connection closed by 4.3.2.1 port 50714 [preauth]
+Oct  3 09:12:11 ubuntu sshd[9096]: Connection closed by 4.3.2.1 port 38919 [preauth]
+Oct  3 09:13:22 ubuntu sshd[9100]: Connection closed by 4.3.2.1 port 55362 [preauth]
+Oct  3 09:14:33 ubuntu sshd[9103]: Connection closed by 4.3.2.1 port 43573 [preauth]
+Oct  3 09:15:43 ubuntu sshd[9106]: Connection closed by 4.3.2.1 port 60014 [preauth]
+Oct  3 09:16:53 ubuntu sshd[9109]: Connection closed by 4.3.2.1 port 48223 [preauth]
+Oct  3 09:17:01 ubuntu CRON[9111]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 09:17:01 ubuntu CRON[9111]: pam_unix(cron:session): session closed for user root
+Oct  3 09:18:04 ubuntu sshd[9116]: Connection closed by 4.3.2.1 port 36430 [preauth]
+Oct  3 09:19:14 ubuntu sshd[9119]: Connection closed by 4.3.2.1 port 52875 [preauth]
+Oct  3 09:20:24 ubuntu sshd[9122]: Connection closed by 4.3.2.1 port 41085 [preauth]
+Oct  3 09:20:55 ubuntu sshd[9125]: Received disconnect from 119.249.54.68 port 52639:11:  [preauth]
+Oct  3 09:20:55 ubuntu sshd[9125]: Disconnected from 119.249.54.68 port 52639 [preauth]
+Oct  3 09:21:35 ubuntu sshd[9127]: Connection closed by 4.3.2.1 port 57526 [preauth]
+Oct  3 09:22:45 ubuntu sshd[9130]: Connection closed by 4.3.2.1 port 45735 [preauth]
+Oct  3 09:22:59 ubuntu sshd[9133]: Received disconnect from 185.110.132.201 port 50128:11: Bye Bye [preauth]
+Oct  3 09:22:59 ubuntu sshd[9133]: Disconnected from 185.110.132.201 port 50128 [preauth]
+Oct  3 09:23:56 ubuntu sshd[9136]: Connection closed by 4.3.2.1 port 33944 [preauth]
+Oct  3 09:25:07 ubuntu sshd[9139]: Connection closed by 4.3.2.1 port 50386 [preauth]
+Oct  3 09:26:18 ubuntu sshd[9142]: Connection closed by 4.3.2.1 port 38595 [preauth]
+Oct  3 09:27:29 ubuntu sshd[9145]: Connection closed by 4.3.2.1 port 55038 [preauth]
+Oct  3 09:28:39 ubuntu sshd[9148]: Connection closed by 4.3.2.1 port 43249 [preauth]
+Oct  3 09:29:50 ubuntu sshd[9151]: Connection closed by 4.3.2.1 port 59689 [preauth]
+Oct  3 09:31:01 ubuntu sshd[9154]: Connection closed by 4.3.2.1 port 47895 [preauth]
+Oct  3 09:32:11 ubuntu sshd[9157]: Connection closed by 4.3.2.1 port 36105 [preauth]
+Oct  3 09:33:22 ubuntu sshd[9160]: Connection closed by 4.3.2.1 port 52545 [preauth]
+Oct  3 09:34:33 ubuntu sshd[9163]: Connection closed by 4.3.2.1 port 40758 [preauth]
+Oct  3 09:35:44 ubuntu sshd[9166]: Connection closed by 4.3.2.1 port 57203 [preauth]
+Oct  3 09:36:55 ubuntu sshd[9169]: Connection closed by 4.3.2.1 port 45412 [preauth]
+Oct  3 09:38:06 ubuntu sshd[9172]: Connection closed by 4.3.2.1 port 33623 [preauth]
+Oct  3 09:39:17 ubuntu sshd[9175]: Connection closed by 4.3.2.1 port 50069 [preauth]
+Oct  3 09:40:29 ubuntu sshd[9178]: Connection closed by 4.3.2.1 port 38277 [preauth]
+Oct  3 09:41:40 ubuntu sshd[9182]: Connection closed by 4.3.2.1 port 54719 [preauth]
+Oct  3 09:42:51 ubuntu sshd[9185]: Connection closed by 4.3.2.1 port 42926 [preauth]
+Oct  3 09:44:02 ubuntu sshd[9188]: Connection closed by 4.3.2.1 port 59368 [preauth]
+Oct  3 09:45:13 ubuntu sshd[9192]: Connection closed by 4.3.2.1 port 47575 [preauth]
+Oct  3 09:46:24 ubuntu sshd[9195]: Connection closed by 4.3.2.1 port 35783 [preauth]
+Oct  3 09:46:50 ubuntu sshd[9197]: Invalid user ubnt from 185.110.132.201
+Oct  3 09:46:50 ubuntu sshd[9197]: input_userauth_request: invalid user ubnt [preauth]
+Oct  3 09:46:51 ubuntu sshd[9197]: Received disconnect from 185.110.132.201 port 51455:11: Bye Bye [preauth]
+Oct  3 09:46:51 ubuntu sshd[9197]: Disconnected from 185.110.132.201 port 51455 [preauth]
+Oct  3 09:47:35 ubuntu sshd[9201]: Connection closed by 4.3.2.1 port 52228 [preauth]
+Oct  3 09:48:46 ubuntu sshd[9204]: Connection closed by 4.3.2.1 port 40441 [preauth]
+Oct  3 09:49:56 ubuntu sshd[9207]: Connection closed by 4.3.2.1 port 56882 [preauth]
+Oct  3 09:51:07 ubuntu sshd[9209]: Connection closed by 4.3.2.1 port 45091 [preauth]
+Oct  3 09:52:17 ubuntu sshd[9212]: Connection closed by 4.3.2.1 port 33300 [preauth]
+Oct  3 09:53:27 ubuntu sshd[9215]: Connection closed by 4.3.2.1 port 49739 [preauth]
+Oct  3 09:54:38 ubuntu sshd[9218]: Connection closed by 4.3.2.1 port 37949 [preauth]
+Oct  3 09:55:50 ubuntu sshd[9222]: Connection closed by 4.3.2.1 port 54389 [preauth]
+Oct  3 09:57:02 ubuntu sshd[9225]: Connection closed by 4.3.2.1 port 42596 [preauth]
+Oct  3 09:58:13 ubuntu sshd[9228]: Connection closed by 4.3.2.1 port 59038 [preauth]
+Oct  3 09:59:24 ubuntu sshd[9231]: Connection closed by 4.3.2.1 port 47247 [preauth]
+Oct  3 10:00:35 ubuntu sshd[9234]: Connection closed by 4.3.2.1 port 35452 [preauth]
+Oct  3 10:01:46 ubuntu sshd[9237]: Connection closed by 4.3.2.1 port 51892 [preauth]
+Oct  3 10:02:57 ubuntu sshd[9240]: Connection closed by 4.3.2.1 port 40100 [preauth]
+Oct  3 10:04:07 ubuntu sshd[9243]: Connection closed by 4.3.2.1 port 56545 [preauth]
+Oct  3 10:05:18 ubuntu sshd[9246]: Connection closed by 4.3.2.1 port 44751 [preauth]
+Oct  3 10:06:28 ubuntu sshd[9250]: Connection closed by 4.3.2.1 port 32960 [preauth]
+Oct  3 10:07:39 ubuntu sshd[9254]: Connection closed by 4.3.2.1 port 49401 [preauth]
+Oct  3 10:08:01 ubuntu sshd[9256]: Accepted publickey for ubuntu from 111.240.204.253 port 57630 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 10:08:01 ubuntu sshd[9256]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 10:08:01 ubuntu systemd-logind[838]: New session 22 of user ubuntu.
+Oct  3 10:08:01 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 10:08:10 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct  3 10:08:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 10:08:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 10:08:50 ubuntu sshd[9409]: Connection closed by 4.3.2.1 port 37613 [preauth]
+Oct  3 10:09:03 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/docker exec dockerelk_logstash bash
+Oct  3 10:09:03 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 10:09:03 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 10:09:23 ubuntu sshd[9342]: Received disconnect from 111.240.204.253 port 57630:11: disconnected by user
+Oct  3 10:09:23 ubuntu sshd[9342]: Disconnected from 111.240.204.253 port 57630
+Oct  3 10:09:23 ubuntu sshd[9256]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 10:09:23 ubuntu systemd-logind[838]: Removed session 22.
+Oct  3 10:09:49 ubuntu sshd[9446]: Accepted publickey for ubuntu from 111.240.204.253 port 57706 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 10:09:49 ubuntu sshd[9446]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 10:09:49 ubuntu systemd-logind[838]: New session 23 of user ubuntu.
+Oct  3 10:09:49 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 10:10:01 ubuntu sshd[9499]: Connection closed by 4.3.2.1 port 54053 [preauth]
+Oct  3 10:10:31 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct  3 10:10:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 10:10:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 10:10:49 ubuntu sshd[9514]: Invalid user ubnt from 185.110.132.201
+Oct  3 10:10:49 ubuntu sshd[9514]: input_userauth_request: invalid user ubnt [preauth]
+Oct  3 10:10:49 ubuntu sshd[9514]: Received disconnect from 185.110.132.201 port 51383:11: Bye Bye [preauth]
+Oct  3 10:10:49 ubuntu sshd[9514]: Disconnected from 185.110.132.201 port 51383 [preauth]
+Oct  3 10:11:12 ubuntu sshd[9517]: Connection closed by 4.3.2.1 port 42259 [preauth]
+Oct  3 10:12:24 ubuntu sshd[9564]: Connection closed by 4.3.2.1 port 58701 [preauth]
+Oct  3 10:12:43 ubuntu sshd[9484]: Received disconnect from 111.240.204.253 port 57706:11: disconnected by user
+Oct  3 10:12:43 ubuntu sshd[9484]: Disconnected from 111.240.204.253 port 57706
+Oct  3 10:12:43 ubuntu sshd[9446]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 10:12:43 ubuntu systemd-logind[838]: Removed session 23.
+Oct  3 10:12:43 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 10:13:36 ubuntu sshd[9671]: Connection closed by 4.3.2.1 port 46911 [preauth]
+Oct  3 10:14:49 ubuntu sshd[9674]: Connection closed by 4.3.2.1 port 35122 [preauth]
+Oct  3 10:16:00 ubuntu sshd[9677]: Connection closed by 4.3.2.1 port 51564 [preauth]
+Oct  3 10:16:28 ubuntu sshd[9680]: Connection closed by 111.240.204.253 port 57831 [preauth]
+Oct  3 10:16:36 ubuntu sshd[9683]: Connection closed by 111.240.204.253 port 57832 [preauth]
+Oct  3 10:17:01 ubuntu CRON[9685]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 10:17:01 ubuntu CRON[9685]: pam_unix(cron:session): session closed for user root
+Oct  3 10:17:11 ubuntu sshd[9689]: Connection closed by 4.3.2.1 port 39768 [preauth]
+Oct  3 10:17:49 ubuntu sshd[9691]: Connection closed by 111.240.204.253 port 57840 [preauth]
+Oct  3 10:18:22 ubuntu sshd[9694]: Connection closed by 4.3.2.1 port 56209 [preauth]
+Oct  3 10:19:26 ubuntu sshd[9697]: Received disconnect from 221.194.47.229 port 51151:11:  [preauth]
+Oct  3 10:19:26 ubuntu sshd[9697]: Disconnected from 221.194.47.229 port 51151 [preauth]
+Oct  3 10:19:32 ubuntu sshd[9700]: Connection closed by 4.3.2.1 port 44423 [preauth]
+Oct  3 10:20:43 ubuntu sshd[9703]: Connection closed by 4.3.2.1 port 60865 [preauth]
+Oct  3 10:21:53 ubuntu sshd[9707]: Connection closed by 4.3.2.1 port 49072 [preauth]
+Oct  3 10:23:04 ubuntu sshd[9710]: Connection closed by 4.3.2.1 port 37282 [preauth]
+Oct  3 10:24:14 ubuntu sshd[9713]: Connection closed by 4.3.2.1 port 53722 [preauth]
+Oct  3 10:25:26 ubuntu sshd[9716]: Connection closed by 4.3.2.1 port 41928 [preauth]
+Oct  3 10:26:38 ubuntu sshd[9718]: Connection closed by 4.3.2.1 port 58369 [preauth]
+Oct  3 10:27:49 ubuntu sshd[9722]: Connection closed by 4.3.2.1 port 46579 [preauth]
+Oct  3 10:29:00 ubuntu sshd[9725]: Connection closed by 4.3.2.1 port 34790 [preauth]
+Oct  3 10:30:12 ubuntu sshd[9728]: Connection closed by 4.3.2.1 port 51228 [preauth]
+Oct  3 10:31:23 ubuntu sshd[9731]: Connection closed by 4.3.2.1 port 39436 [preauth]
+Oct  3 10:32:35 ubuntu sshd[9734]: Connection closed by 4.3.2.1 port 55876 [preauth]
+Oct  3 10:33:48 ubuntu sshd[9738]: Connection closed by 4.3.2.1 port 44085 [preauth]
+Oct  3 10:34:53 ubuntu sshd[9741]: Invalid user pi from 185.110.132.201
+Oct  3 10:34:53 ubuntu sshd[9741]: input_userauth_request: invalid user pi [preauth]
+Oct  3 10:34:53 ubuntu sshd[9741]: Received disconnect from 185.110.132.201 port 34891:11: Bye Bye [preauth]
+Oct  3 10:34:53 ubuntu sshd[9741]: Disconnected from 185.110.132.201 port 34891 [preauth]
+Oct  3 10:35:00 ubuntu sshd[9744]: Connection closed by 4.3.2.1 port 60529 [preauth]
+Oct  3 10:36:12 ubuntu sshd[9747]: Connection closed by 4.3.2.1 port 48736 [preauth]
+Oct  3 10:37:24 ubuntu sshd[9750]: Connection closed by 4.3.2.1 port 36942 [preauth]
+Oct  3 10:38:36 ubuntu sshd[9754]: Connection closed by 4.3.2.1 port 53387 [preauth]
+Oct  3 10:38:54 ubuntu sshd[9756]: Received disconnect from 221.194.47.208 port 47788:11:  [preauth]
+Oct  3 10:38:54 ubuntu sshd[9756]: Disconnected from 221.194.47.208 port 47788 [preauth]
+Oct  3 10:39:48 ubuntu sshd[9760]: Connection closed by 4.3.2.1 port 41592 [preauth]
+Oct  3 10:41:01 ubuntu sshd[9763]: Connection closed by 4.3.2.1 port 58032 [preauth]
+Oct  3 10:42:14 ubuntu sshd[9766]: Connection closed by 4.3.2.1 port 46241 [preauth]
+Oct  3 10:43:25 ubuntu sshd[9771]: Connection closed by 4.3.2.1 port 34451 [preauth]
+Oct  3 10:43:26 ubuntu sshd[9769]: Received disconnect from 121.18.238.104 port 56938:11:  [preauth]
+Oct  3 10:43:26 ubuntu sshd[9769]: Disconnected from 121.18.238.104 port 56938 [preauth]
+Oct  3 10:44:38 ubuntu sshd[9774]: Connection closed by 4.3.2.1 port 50891 [preauth]
+Oct  3 10:45:50 ubuntu sshd[9777]: Connection closed by 4.3.2.1 port 39099 [preauth]
+Oct  3 10:47:02 ubuntu sshd[9779]: Connection closed by 4.3.2.1 port 55536 [preauth]
+Oct  3 10:48:14 ubuntu sshd[9782]: Connection closed by 4.3.2.1 port 43744 [preauth]
+Oct  3 10:49:26 ubuntu sshd[9786]: Connection closed by 4.3.2.1 port 60188 [preauth]
+Oct  3 10:50:08 ubuntu sshd[9789]: Invalid user docker from 111.240.204.253
+Oct  3 10:50:08 ubuntu sshd[9789]: input_userauth_request: invalid user docker [preauth]
+Oct  3 10:50:08 ubuntu sshd[9789]: Connection closed by 111.240.204.253 port 58360 [preauth]
+Oct  3 10:50:37 ubuntu sshd[9792]: Connection closed by 4.3.2.1 port 48397 [preauth]
+Oct  3 10:51:49 ubuntu sshd[9796]: Connection closed by 4.3.2.1 port 36610 [preauth]
+Oct  3 10:53:01 ubuntu sshd[9799]: Connection closed by 4.3.2.1 port 53052 [preauth]
+Oct  3 10:54:13 ubuntu sshd[9802]: Connection closed by 4.3.2.1 port 41261 [preauth]
+Oct  3 10:55:24 ubuntu sshd[9805]: Connection closed by 4.3.2.1 port 57699 [preauth]
+Oct  3 10:56:36 ubuntu sshd[9808]: Connection closed by 4.3.2.1 port 45909 [preauth]
+Oct  3 10:56:58 ubuntu sshd[9810]: Received disconnect from 119.249.54.66 port 33156:11:  [preauth]
+Oct  3 10:56:58 ubuntu sshd[9810]: Disconnected from 119.249.54.66 port 33156 [preauth]
+Oct  3 10:57:48 ubuntu sshd[9814]: Connection closed by 4.3.2.1 port 34116 [preauth]
+Oct  3 10:58:32 ubuntu sshd[9817]: Invalid user admin from 185.110.132.201
+Oct  3 10:58:32 ubuntu sshd[9817]: input_userauth_request: invalid user admin [preauth]
+Oct  3 10:58:32 ubuntu sshd[9817]: Received disconnect from 185.110.132.201 port 48996:11: Bye Bye [preauth]
+Oct  3 10:58:32 ubuntu sshd[9817]: Disconnected from 185.110.132.201 port 48996 [preauth]
+Oct  3 10:59:00 ubuntu sshd[9821]: Connection closed by 4.3.2.1 port 50558 [preauth]
+Oct  3 11:00:13 ubuntu sshd[9824]: Connection closed by 4.3.2.1 port 38764 [preauth]
+Oct  3 11:01:26 ubuntu sshd[9827]: Connection closed by 4.3.2.1 port 55202 [preauth]
+Oct  3 11:02:37 ubuntu sshd[9830]: Connection closed by 4.3.2.1 port 43415 [preauth]
+Oct  3 11:03:49 ubuntu sshd[9833]: Connection closed by 4.3.2.1 port 59857 [preauth]
+Oct  3 11:05:00 ubuntu sshd[9837]: Connection closed by 4.3.2.1 port 48065 [preauth]
+Oct  3 11:06:12 ubuntu sshd[9840]: Connection closed by 4.3.2.1 port 36272 [preauth]
+Oct  3 11:07:23 ubuntu sshd[9843]: Connection closed by 4.3.2.1 port 52714 [preauth]
+Oct  3 11:08:35 ubuntu sshd[9845]: Connection closed by 4.3.2.1 port 40925 [preauth]
+Oct  3 11:09:46 ubuntu sshd[9849]: Connection closed by 4.3.2.1 port 57368 [preauth]
+Oct  3 11:10:56 ubuntu sshd[9852]: Connection closed by 4.3.2.1 port 45576 [preauth]
+Oct  3 11:12:07 ubuntu sshd[9855]: Connection closed by 4.3.2.1 port 33782 [preauth]
+Oct  3 11:13:18 ubuntu sshd[9858]: Connection closed by 4.3.2.1 port 50222 [preauth]
+Oct  3 11:14:28 ubuntu sshd[9861]: Connection closed by 4.3.2.1 port 38432 [preauth]
+Oct  3 11:15:39 ubuntu sshd[9864]: Connection closed by 4.3.2.1 port 54875 [preauth]
+Oct  3 11:16:14 ubuntu sshd[9866]: Received disconnect from 78.129.171.173 port 40325:11: Bye Bye [preauth]
+Oct  3 11:16:14 ubuntu sshd[9866]: Disconnected from 78.129.171.173 port 40325 [preauth]
+Oct  3 11:16:50 ubuntu sshd[9869]: Connection closed by 4.3.2.1 port 43084 [preauth]
+Oct  3 11:17:01 ubuntu CRON[9871]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 11:17:01 ubuntu CRON[9871]: pam_unix(cron:session): session closed for user root
+Oct  3 11:18:01 ubuntu sshd[9877]: Connection closed by 4.3.2.1 port 59525 [preauth]
+Oct  3 11:19:13 ubuntu sshd[9880]: Connection closed by 4.3.2.1 port 47739 [preauth]
+Oct  3 11:19:23 ubuntu sshd[9883]: Invalid user admin from 61.147.110.15
+Oct  3 11:19:23 ubuntu sshd[9883]: input_userauth_request: invalid user admin [preauth]
+Oct  3 11:19:23 ubuntu sshd[9883]: Received disconnect from 61.147.110.15 port 4300:11: disconnect [preauth]
+Oct  3 11:19:23 ubuntu sshd[9883]: Disconnected from 61.147.110.15 port 4300 [preauth]
+Oct  3 11:20:24 ubuntu sshd[9887]: Connection closed by 4.3.2.1 port 35948 [preauth]
+Oct  3 11:21:35 ubuntu sshd[9890]: Connection closed by 4.3.2.1 port 52390 [preauth]
+Oct  3 11:22:25 ubuntu sshd[9892]: Invalid user user from 185.110.132.201
+Oct  3 11:22:25 ubuntu sshd[9892]: input_userauth_request: invalid user user [preauth]
+Oct  3 11:22:25 ubuntu sshd[9892]: Received disconnect from 185.110.132.201 port 60765:11: Bye Bye [preauth]
+Oct  3 11:22:25 ubuntu sshd[9892]: Disconnected from 185.110.132.201 port 60765 [preauth]
+Oct  3 11:22:46 ubuntu sshd[9896]: Connection closed by 4.3.2.1 port 40596 [preauth]
+Oct  3 11:23:57 ubuntu sshd[9899]: Connection closed by 4.3.2.1 port 57038 [preauth]
+Oct  3 11:25:08 ubuntu sshd[9901]: Connection closed by 4.3.2.1 port 45244 [preauth]
+Oct  3 11:26:19 ubuntu sshd[9904]: Connection closed by 4.3.2.1 port 33454 [preauth]
+Oct  3 11:27:31 ubuntu sshd[9907]: Connection closed by 4.3.2.1 port 49897 [preauth]
+Oct  3 11:28:42 ubuntu sshd[9910]: Connection closed by 4.3.2.1 port 38108 [preauth]
+Oct  3 11:29:54 ubuntu sshd[9913]: Connection closed by 4.3.2.1 port 54549 [preauth]
+Oct  3 11:31:07 ubuntu sshd[9917]: Connection closed by 4.3.2.1 port 42758 [preauth]
+Oct  3 11:32:19 ubuntu sshd[9920]: Connection closed by 4.3.2.1 port 59201 [preauth]
+Oct  3 11:33:30 ubuntu sshd[9923]: Connection closed by 4.3.2.1 port 47409 [preauth]
+Oct  3 11:34:40 ubuntu sshd[9926]: Connection closed by 4.3.2.1 port 35621 [preauth]
+Oct  3 11:35:51 ubuntu sshd[9929]: Connection closed by 4.3.2.1 port 52060 [preauth]
+Oct  3 11:37:02 ubuntu sshd[9932]: Connection closed by 4.3.2.1 port 40268 [preauth]
+Oct  3 11:38:14 ubuntu sshd[9935]: Connection closed by 4.3.2.1 port 56709 [preauth]
+Oct  3 11:39:24 ubuntu sshd[9938]: Connection closed by 4.3.2.1 port 44920 [preauth]
+Oct  3 11:40:35 ubuntu sshd[9941]: Connection closed by 4.3.2.1 port 33125 [preauth]
+Oct  3 11:41:45 ubuntu sshd[9945]: Connection closed by 4.3.2.1 port 49563 [preauth]
+Oct  3 11:42:56 ubuntu sshd[9947]: Connection closed by 4.3.2.1 port 37771 [preauth]
+Oct  3 11:44:07 ubuntu sshd[9950]: Connection closed by 4.3.2.1 port 54216 [preauth]
+Oct  3 11:45:18 ubuntu sshd[9953]: Connection closed by 4.3.2.1 port 42423 [preauth]
+Oct  3 11:46:27 ubuntu sshd[9957]: Received disconnect from 185.110.132.201 port 34839:11: Bye Bye [preauth]
+Oct  3 11:46:27 ubuntu sshd[9957]: Disconnected from 185.110.132.201 port 34839 [preauth]
+Oct  3 11:46:30 ubuntu sshd[9960]: Connection closed by 4.3.2.1 port 58864 [preauth]
+Oct  3 11:47:40 ubuntu sshd[9963]: Connection closed by 4.3.2.1 port 47070 [preauth]
+Oct  3 11:48:50 ubuntu sshd[9966]: Connection closed by 4.3.2.1 port 35285 [preauth]
+Oct  3 11:50:01 ubuntu sshd[9969]: Connection closed by 4.3.2.1 port 51725 [preauth]
+Oct  3 11:51:12 ubuntu sshd[9972]: Connection closed by 4.3.2.1 port 39935 [preauth]
+Oct  3 11:52:23 ubuntu sshd[9976]: Connection closed by 4.3.2.1 port 56377 [preauth]
+Oct  3 11:53:33 ubuntu sshd[9979]: Connection closed by 4.3.2.1 port 44586 [preauth]
+Oct  3 11:54:43 ubuntu sshd[9982]: Connection closed by 4.3.2.1 port 32800 [preauth]
+Oct  3 11:55:54 ubuntu sshd[9985]: Connection closed by 4.3.2.1 port 49241 [preauth]
+Oct  3 11:57:06 ubuntu sshd[9988]: Connection closed by 4.3.2.1 port 37451 [preauth]
+Oct  3 11:58:18 ubuntu sshd[9991]: Connection closed by 4.3.2.1 port 53894 [preauth]
+Oct  3 11:58:31 ubuntu sshd[9994]: Received disconnect from 221.194.47.229 port 50225:11:  [preauth]
+Oct  3 11:58:31 ubuntu sshd[9994]: Disconnected from 221.194.47.229 port 50225 [preauth]
+Oct  3 11:59:29 ubuntu sshd[9998]: Connection closed by 4.3.2.1 port 42105 [preauth]
+Oct  3 12:00:41 ubuntu sshd[10000]: Connection closed by 4.3.2.1 port 58547 [preauth]
+Oct  3 12:01:52 ubuntu sshd[10003]: Connection closed by 4.3.2.1 port 46755 [preauth]
+Oct  3 12:03:03 ubuntu sshd[10007]: Connection closed by 4.3.2.1 port 34963 [preauth]
+Oct  3 12:04:14 ubuntu sshd[10010]: Connection closed by 4.3.2.1 port 51404 [preauth]
+Oct  3 12:05:24 ubuntu sshd[10013]: Connection closed by 4.3.2.1 port 39611 [preauth]
+Oct  3 12:06:34 ubuntu sshd[10016]: Connection closed by 4.3.2.1 port 56053 [preauth]
+Oct  3 12:07:45 ubuntu sshd[10019]: Connection closed by 4.3.2.1 port 44263 [preauth]
+Oct  3 12:08:55 ubuntu sshd[10022]: Connection closed by 4.3.2.1 port 60711 [preauth]
+Oct  3 12:10:07 ubuntu sshd[10025]: Connection closed by 4.3.2.1 port 48923 [preauth]
+Oct  3 12:10:49 ubuntu sshd[10027]: Invalid user test from 185.110.132.201
+Oct  3 12:10:49 ubuntu sshd[10027]: input_userauth_request: invalid user test [preauth]
+Oct  3 12:10:50 ubuntu sshd[10027]: Received disconnect from 185.110.132.201 port 35158:11: Bye Bye [preauth]
+Oct  3 12:10:50 ubuntu sshd[10027]: Disconnected from 185.110.132.201 port 35158 [preauth]
+Oct  3 12:11:18 ubuntu sshd[10031]: Connection closed by 4.3.2.1 port 37129 [preauth]
+Oct  3 12:12:29 ubuntu sshd[10034]: Connection closed by 4.3.2.1 port 53569 [preauth]
+Oct  3 12:13:40 ubuntu sshd[10038]: Connection closed by 4.3.2.1 port 41782 [preauth]
+Oct  3 12:14:50 ubuntu sshd[10041]: Connection closed by 4.3.2.1 port 58223 [preauth]
+Oct  3 12:16:01 ubuntu sshd[10044]: Connection closed by 4.3.2.1 port 46432 [preauth]
+Oct  3 12:17:01 ubuntu CRON[10046]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 12:17:01 ubuntu CRON[10046]: pam_unix(cron:session): session closed for user root
+Oct  3 12:17:13 ubuntu sshd[10051]: Connection closed by 4.3.2.1 port 34640 [preauth]
+Oct  3 12:18:01 ubuntu sshd[10054]: Invalid user admin from 91.224.160.184
+Oct  3 12:18:01 ubuntu sshd[10054]: input_userauth_request: invalid user admin [preauth]
+Oct  3 12:18:11 ubuntu sshd[10054]: Received disconnect from 91.224.160.184 port 60568:11:  [preauth]
+Oct  3 12:18:11 ubuntu sshd[10054]: Disconnected from 91.224.160.184 port 60568 [preauth]
+Oct  3 12:18:18 ubuntu sshd[10057]: Invalid user admin from 91.224.160.184
+Oct  3 12:18:18 ubuntu sshd[10057]: input_userauth_request: invalid user admin [preauth]
+Oct  3 12:18:24 ubuntu sshd[10061]: Connection closed by 4.3.2.1 port 51085 [preauth]
+Oct  3 12:18:25 ubuntu sshd[10059]: Accepted publickey for ubuntu from 111.240.204.253 port 59626 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 12:18:25 ubuntu sshd[10059]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:18:25 ubuntu systemd-logind[838]: New session 27 of user ubuntu.
+Oct  3 12:18:25 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:18:29 ubuntu sshd[10057]: Received disconnect from 91.224.160.184 port 45182:11:  [preauth]
+Oct  3 12:18:29 ubuntu sshd[10057]: Disconnected from 91.224.160.184 port 45182 [preauth]
+Oct  3 12:18:35 ubuntu sshd[10167]: Invalid user admin from 91.224.160.184
+Oct  3 12:18:35 ubuntu sshd[10167]: input_userauth_request: invalid user admin [preauth]
+Oct  3 12:18:36 ubuntu sshd[10148]: Received disconnect from 111.240.204.253 port 59626:11: disconnected by user
+Oct  3 12:18:36 ubuntu sshd[10148]: Disconnected from 111.240.204.253 port 59626
+Oct  3 12:18:36 ubuntu sshd[10059]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 12:18:36 ubuntu systemd-logind[838]: Removed session 27.
+Oct  3 12:18:36 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 12:18:43 ubuntu sshd[10167]: Received disconnect from 91.224.160.184 port 35390:11:  [preauth]
+Oct  3 12:18:43 ubuntu sshd[10167]: Disconnected from 91.224.160.184 port 35390 [preauth]
+Oct  3 12:18:51 ubuntu sshd[10182]: Invalid user admin from 91.224.160.184
+Oct  3 12:18:51 ubuntu sshd[10182]: input_userauth_request: invalid user admin [preauth]
+Oct  3 12:18:55 ubuntu sshd[10182]: Received disconnect from 91.224.160.184 port 42379:11:  [preauth]
+Oct  3 12:18:55 ubuntu sshd[10182]: Disconnected from 91.224.160.184 port 42379 [preauth]
+Oct  3 12:19:13 ubuntu sshd[10184]: Received disconnect from 91.224.160.184 port 49023:11:  [preauth]
+Oct  3 12:19:13 ubuntu sshd[10184]: Disconnected from 91.224.160.184 port 49023 [preauth]
+Oct  3 12:19:23 ubuntu sshd[10186]: Received disconnect from 91.224.160.184 port 54851:11:  [preauth]
+Oct  3 12:19:23 ubuntu sshd[10186]: Disconnected from 91.224.160.184 port 54851 [preauth]
+Oct  3 12:19:30 ubuntu sshd[10188]: Received disconnect from 91.224.160.184 port 33900:11:  [preauth]
+Oct  3 12:19:30 ubuntu sshd[10188]: Disconnected from 91.224.160.184 port 33900 [preauth]
+Oct  3 12:19:34 ubuntu sshd[10190]: Invalid user support from 91.224.160.184
+Oct  3 12:19:34 ubuntu sshd[10190]: input_userauth_request: invalid user support [preauth]
+Oct  3 12:19:34 ubuntu sshd[10193]: Connection closed by 4.3.2.1 port 39298 [preauth]
+Oct  3 12:19:37 ubuntu sshd[10190]: Received disconnect from 91.224.160.184 port 38120:11:  [preauth]
+Oct  3 12:19:37 ubuntu sshd[10190]: Disconnected from 91.224.160.184 port 38120 [preauth]
+Oct  3 12:19:41 ubuntu sshd[10195]: Invalid user user from 91.224.160.184
+Oct  3 12:19:41 ubuntu sshd[10195]: input_userauth_request: invalid user user [preauth]
+Oct  3 12:19:46 ubuntu sshd[10195]: Received disconnect from 91.224.160.184 port 48114:11:  [preauth]
+Oct  3 12:19:46 ubuntu sshd[10195]: Disconnected from 91.224.160.184 port 48114 [preauth]
+Oct  3 12:19:47 ubuntu sshd[10198]: Accepted publickey for ubuntu from 111.240.204.253 port 59684 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 12:19:47 ubuntu sshd[10198]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:19:47 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:19:47 ubuntu systemd-logind[838]: New session 28 of user ubuntu.
+Oct  3 12:19:49 ubuntu sshd[10200]: Invalid user manager from 91.224.160.184
+Oct  3 12:19:49 ubuntu sshd[10200]: input_userauth_request: invalid user manager [preauth]
+Oct  3 12:19:51 ubuntu sshd[10200]: Received disconnect from 91.224.160.184 port 47862:11:  [preauth]
+Oct  3 12:19:51 ubuntu sshd[10200]: Disconnected from 91.224.160.184 port 47862 [preauth]
+Oct  3 12:19:54 ubuntu sshd[10252]: Invalid user ubnt from 91.224.160.184
+Oct  3 12:19:54 ubuntu sshd[10252]: input_userauth_request: invalid user ubnt [preauth]
+Oct  3 12:19:56 ubuntu sshd[10252]: Received disconnect from 91.224.160.184 port 39067:11:  [preauth]
+Oct  3 12:19:56 ubuntu sshd[10252]: Disconnected from 91.224.160.184 port 39067 [preauth]
+Oct  3 12:20:00 ubuntu sshd[10255]: Invalid user test from 91.224.160.184
+Oct  3 12:20:00 ubuntu sshd[10255]: input_userauth_request: invalid user test [preauth]
+Oct  3 12:20:03 ubuntu sshd[10255]: Received disconnect from 91.224.160.184 port 55622:11:  [preauth]
+Oct  3 12:20:03 ubuntu sshd[10255]: Disconnected from 91.224.160.184 port 55622 [preauth]
+Oct  3 12:20:05 ubuntu sshd[10237]: Received disconnect from 111.240.204.253 port 59684:11: disconnected by user
+Oct  3 12:20:05 ubuntu sshd[10237]: Disconnected from 111.240.204.253 port 59684
+Oct  3 12:20:05 ubuntu sshd[10198]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 12:20:05 ubuntu systemd-logind[838]: Removed session 28.
+Oct  3 12:20:07 ubuntu sshd[10258]: Invalid user tech from 91.224.160.184
+Oct  3 12:20:07 ubuntu sshd[10258]: input_userauth_request: invalid user tech [preauth]
+Oct  3 12:20:09 ubuntu sshd[10258]: Received disconnect from 91.224.160.184 port 45551:11:  [preauth]
+Oct  3 12:20:09 ubuntu sshd[10258]: Disconnected from 91.224.160.184 port 45551 [preauth]
+Oct  3 12:20:13 ubuntu sshd[10269]: Invalid user operator from 91.224.160.184
+Oct  3 12:20:13 ubuntu sshd[10269]: input_userauth_request: invalid user operator [preauth]
+Oct  3 12:20:15 ubuntu sshd[10269]: Received disconnect from 91.224.160.184 port 58908:11:  [preauth]
+Oct  3 12:20:15 ubuntu sshd[10269]: Disconnected from 91.224.160.184 port 58908 [preauth]
+Oct  3 12:20:19 ubuntu sshd[10272]: Invalid user webadmin from 91.224.160.184
+Oct  3 12:20:19 ubuntu sshd[10272]: input_userauth_request: invalid user webadmin [preauth]
+Oct  3 12:20:22 ubuntu sshd[10272]: Received disconnect from 91.224.160.184 port 40990:11:  [preauth]
+Oct  3 12:20:22 ubuntu sshd[10272]: Disconnected from 91.224.160.184 port 40990 [preauth]
+Oct  3 12:20:45 ubuntu sshd[10275]: Accepted publickey for ubuntu from 111.240.204.253 port 59694 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 12:20:45 ubuntu sshd[10275]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:20:45 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:20:45 ubuntu systemd-logind[838]: New session 29 of user ubuntu.
+Oct  3 12:20:45 ubuntu sshd[10277]: Connection closed by 4.3.2.1 port 55739 [preauth]
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh -c #012#012if test "x$TMPDIR" = "x"; then#012  tmp="/tmp"#012else#012  tmp=$TMPDIR#012fi#012#012# secure-ish temp dir creation without having mktemp available (DDoS-able but not exploitable)#012tmp_dir="$tmp/install.sh.$$"#012(umask 077 && mkdir $tmp_dir) || exit 1#012#012exists() {#012  if command -v $1 >/dev/null 2>&1#012  then#012    return 0#012  else#012    return 1#012  fi#012}#012#012http_404_error() {#012  echo "ERROR 404: Could not retrieve a valid install.sh!"#012  exit 1#012}#012#012capture_tmp_stderr() {#012  # spool up /tmp/stderr from all the commands we called#012  if test -f "$tmp_dir/stderr"; then#012    output=`cat $tmp_dir/stderr`#012    stderr_results="${stderr_results}\nSTDERR from $1:\n\n$output\n"#012    rm $tmp_dir/stderr#012  fi#012}#012#012# do_wget URL FILENAME#012do_wget() {#012  echo "trying wget..."#012  wget   -O "$2" "$1" 2>$tmp_dir/stderr#012  rc=$?#012  # check for 404#012  grep "ERROR 404" $tmp_dir/stderr 2>&1 >/dev/null#012  if test $? -eq 0; then#012    http_404_error
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) fi#012#012  # check for bad return status or empty output#012  if test $rc -ne 0 || test ! -s "$2"; then#012    capture_tmp_stderr "wget"#012    return 1#012  fi#012#012  return 0#012}#012#012# do_curl URL FILENAME#012do_curl() {#012  echo "trying curl..."#012  curl -sL   -D $tmp_dir/stderr -o "$2" "$1" 2>$tmp_dir/stderr#012  rc=$?#012  # check for 404#012  grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null#012  if test $? -eq 0; then#012    http_404_error#012  fi#012#012  # check for bad return status or empty output#012  if test $rc -ne 0 || test ! -s "$2"; then#012    capture_tmp_stderr "curl"#012    return 1#012  fi#012#012  return 0#012}#012#012# do_fetch URL FILENAME#012do_fetch() {#012  echo "trying fetch..."#012  fetch -o "$2" "$1" 2>$tmp_dir/stderr#012  # check for bad return status#012  test $? -ne 0 && return 1#012  return 0#012}#012#012# do_perl URL FILENAME#012do_perl() {#012  echo "trying perl..."#012  perl -e "use LWP::Simple; getprint(shift @ARGV);" "$1" > "$2" 2>$tmp_dir/stderr#012  rc=$?#012  # check for 404#012  grep "404 Not Foun
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) $tmp_dir/stderr 2>&1 >/dev/null#012  if test $? -eq 0; then#012    http_404_error#012  fi#012#012  # check for bad return status or empty output#012  if test $rc -ne 0 || test ! -s "$2"; then#012    capture_tmp_stderr "perl"#012    return 1#012  fi#012#012  return 0#012}#012#012# do_python URL FILENAME#012do_python() {#012  echo "trying python..."#012  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>$tmp_dir/stderr#012  rc=$?#012  # check for 404#012  grep "HTTP Error 404" $tmp_dir/stderr 2>&1 >/dev/null#012  if test $? -eq 0; then#012    http_404_error#012  fi#012#012  # check for bad return status or empty output#012  if test $rc -ne 0 || test ! -s "$2"; then#012    capture_tmp_stderr "python"#012    return 1#012  fi#012  return 0#012}#012#012# do_download URL FILENAME#012do_download() {#012  PATH=/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sfw/bin:/sbin:/bin:/usr/sbin:/usr/bin#012  export PATH#012#012  echo "downloading $1"#012  echo "  to file $2"#012#012  # we try all of
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) these until we get success.#012  # perl, in particular may be present but LWP::Simple may not be installed#012#012  if exists wget; then#012    do_wget $1 $2 && return 0#012  fi#012#012  if exists curl; then#012    do_curl $1 $2 && return 0#012  fi#012#012  if exists fetch; then#012    do_fetch $1 $2 && return 0#012  fi#012#012  if exists perl; then#012    do_perl $1 $2 && return 0#012  fi#012#012  if exists python; then#012    do_python $1 $2 && return 0#012  fi#012#012  echo ">>>>>> wget, curl, fetch, perl, or python not found on this instance."#012#012  if test "x$stderr_results" != "x"; then#012    echo "\nDEBUG OUTPUT FOLLOWS:\n$stderr_results"#012  fi#012#012  return 16#012}#012#012  install_sh="https://omnitruck-direct.chef.io/chef/install.sh"#012  if test -f /usr/bin/chef-client; then#012    echo "-----> Existing Chef installation detected"#012  else#012    echo "-----> Installing Chef Omnibus (-v 12)"#012    do_download ${install_sh} $tmp_dir/install.sh#012    sh $tmp_dir/install.sh -P chef -v 12#012  fi#012#012if test
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) "x$tmp_dir" != "x"; then#012  rm -r "$tmp_dir"#012fi#012#012mkdir -p /etc/chef#012#012#012cat > /etc/chef/validation.pem <<EOP#012-----BEGIN RSA PRIVATE
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) KEY-----#012MIIEpAIBAAKCAQEA37Tazqi65FsZE8dlJZGSNaiuJCZW3oXBO3jqVTS0zNnWDddc#0129BWiY5Xm2NuxpAUSlplIMmpoU+37kN2UtDXKhR/HnOZ//4NdmtCAhl8PExtFoCGC#012uvydWrKch77T6O+24QLd8w18+cusxKkzrBEBpW9c8buj5oWDtO74dlLidwd3VWxl#012cy20d606Vbe2sZs/FNjDgN1llRO4vlDWR8RaZ+TA/da4BM2KCXHAfC52xUUlZv8t#012+d+CEf4RTNqnVtApS6Pw832tzogMkwhFmimPfghv4ykVbI/8z16+DkJTmAxlu3Fq#012M8g27mnY/Ggyw/98kL8lOgY9zK2Ubc96Rlx2nwIDAQABAoIBAQDBirrzqM9o2dfs#012YMqFolgYzIM9C16EzrvLNGWoqhzyTlT/TKBDHKSN/Bbo78nU2f6nBJ6N37m7Q14u#012i0YoU5GPc1tDx7hd282UL2fC2WM1aJboX5W3KO8KlRUP7G1yTlKugch8i+LgSvKC#012gtENwPjnpF2JVooK2uCEHWwhEryTtOcnFrV2urHmf05lbvGkQpSoPEQNOp+L6uNB#012uwb0k5GoYdfUXWNxCQv4jOl8SLdoZOqwFn93xtR9pdvTMBGSepM2QIrhLapxz56S#012Q/3LZYR3HF4N+vyb5aEezp4v5GsbleJhFru+SAkML6MAqXPUuiB16wKPnLqQvMBo#0120T40ikvBAoGBAP2BjA8C1GHtwcnDeKO85fb77TJYttoy59um+a8keT5049Mp6qA5#012B4T4rXsFJ8k/Jgc7qIH3+aEnFznmvlsWDA4quqLg3e9vKlLB4yGwNNtS05Ymplx3#012YDW/NGNRAGmHtPDdtnwLy6k9jM49o5B6CLvpCVxCEpRrEu1o6/QHmogZAoGBAOHo#012QfMDI7xUIb
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) 3MFO2QKnM5kNLfRTSbho0pkiFvF+330VZmi3ZDAilNm3ttkJjg1#012DKoHUtnofThXDIvQBFsOniJgv7rDTPbnwzyop3ZBohcKEs+upwFAGQfL7a/pJaNk#012q1Keg9ycprikq12mtgUxRnYUXQN+bk9d8/s/Yyt3AoGAcD7eHv9nvnyho46TahyH#012zlY57mLtg6uqkc1bHLuPm6HyBlu28X6O38ekOKZNuYPmeKlnsTR1KW+/jvmmK3qV#012l+g/f0MFwbB9EuuagB4fKUWBPiia3LJWvTWOIrOI9TELYuMom8A1SxhfsioEtEH0#012gA9s/5aZ13GZjdk5MHH1cHECgYEA4HvPrRBdnnNr2wqcovt7/PmewGlLCa5uoEhv#0123yjvZ2LhelQmC7mPupvZ2O7MXe6zG/97Sipk5izk4et+iCB5c5KfCUJiw8/21xOP#012KuPdJOIrlAFql/3R7qgnN1wqITfpMuiCZmMmXT89XRYlQ7a6AYbpocSyeRpVu4B9#012RhnDDhkCgYB0t6dx7kedUVtCT+DjNzJgpSVPAtEAPgCwrAVq9+eHJr3kVFbneDro#012T4WXexMLFGll/aMFSUi/4JwiHsxC2BN7K2Y2Bf+rMzIA3gu4F/eSZ/d/gTTOvsoK#012FQDepTEw9UFUwRNurIA9XreJ7q3wg6g1vDWkJN1LR8kP+gdbtCTzBQ==#012-----END RSA PRIVATE KEY-----#012#012#012EOP#012chmod 0600 /etc/chef/validation.pem#012#012#012mkdir -p /etc/chef/trusted_certs#012cat > /etc/chef/trusted_certs/chef.nkg-cloud.com.crt <<EOP#012-----BEGIN
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) CERTIFICATE-----#012MIIDnjCCAoYCCQDOzpQGw2d+oTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC#012VVMxCzAJBgNVBAgMAldBMRAwDgYDVQQHDAdTZWF0dGxlMRAwDgYDVQQKDAdZb3VD#012b3JwMRMwEQYDVQQLDApPcGVyYXRpb25zMRswGQYDVQQDDBJjaGVmLm5rZy1jbG91#012ZC5jb20xHjAcBgkqhkiG9w0BCQEWD3lvdUBleGFtcGxlLmNvbTAeFw0xNjA3MjUw#012OTUwMDlaFw0yNjA3MjMwOTUwMDlaMIGQMQswCQYDVQQGEwJVUzELMAkGA1UECAwC#012V0ExEDAOBgNVBAcMB1NlYXR0bGUxEDAOBgNVBAoMB1lvdUNvcnAxEzARBgNVBAsM#012Ck9wZXJhdGlvbnMxGzAZBgNVBAMMEmNoZWYubmtnLWNsb3VkLmNvbTEeMBwGCSqG#012SIb3DQEJARYPeW91QGV4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A#012MIIBCgKCAQEAqN/3Gm6ZOW43h+xUt3XSKSKjbDbF3t3FeygkCPnsYPKcjUJBjC2J#012QP9+RQpY5ObBpV1Gu4lld0PXRVRTgZNrivufKRzI3r5t/Ku0UmFaSXWm5xlQ+Gld#012oJI4mG6QAJrB4BMPb2SA15DswZReKlNu4AGTNal2lKA+wXe2PiJz+t99jVU/DwLS#012/3IeA0RmNLtVTPhJYD2x9zML0Ui+erjpsAwMUDiCp77ntMqbttVErEWm6PN0DIdT#0127o4q1XOfjUgGZL4pBg6qVNthV522sBBediAGOBdY+psh4ExyTRyELTsp8cJusoBN#0123fbBKLdCTll6SkyXmLSfFGsleqfIqkmTawIDAQABMA0GCSqGSIb3DQEBBQUAA4IB#012AQ
+Oct  3 12:20:46 ubuntu sudo:    ubuntu : (command continued) YVker5ewELqAXVea3bFSu5qLwBRUlRe+pYwr9nvv1qbvFKsUyFGfXtB0477#01276AKqpxXW9GcRyTOppdrjJPb10Pn9kqzHIC2dBUQuArrDZ+gdEhhwzPBqb1KfBk8#012JRKyArMP4nOCdasXPKKdgoeLZJvBiQ8+8Lk8gK74ME0dGvCCZJIbGS0NqfU6RsGn#012x9FuMarFl5nava228S/Bnto5egm2QmLFKWXQJrYx6tGRQCab/zJqMvIpKJ+sxEQV#012e9iTJ79jMdJ+HA0+pgMLIE1r67JOmNkCyDJaMUBCmM6Owu7vzq/kCoGcBkr3tpr8#012E2hBx6BFHQmt2q01cdYqhP0u#012-----END CERTIFICATE-----#012#012EOP#012#012#012#012cat > /etc/chef/client.rb <<EOP#012log_location     STDOUT#012chef_server_url  "https://chef.nkg-cloud.com:443"#012validation_client_name "chef-validator"#012node_name "elk-himirror-nkg-cloud"#012trusted_certs_dir "/etc/chef/trusted_certs"#012#012EOP#012#012cat > /etc/chef/first-boot.json <<EOP#012{"run_list":[]}#012EOP#012#012#012echo "Starting the first Chef Client run..."#012#012chef-client -j /etc/chef/first-boot.json
+Oct  3 12:20:46 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 12:21:56 ubuntu sshd[10424]: Connection closed by 4.3.2.1 port 43947 [preauth]
+Oct  3 12:22:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 12:22:05 ubuntu sshd[10275]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 12:22:05 ubuntu systemd-logind[838]: Removed session 29.
+Oct  3 12:22:05 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 12:23:08 ubuntu sshd[10683]: Connection closed by 4.3.2.1 port 60387 [preauth]
+Oct  3 12:24:20 ubuntu sshd[10687]: Connection closed by 4.3.2.1 port 48600 [preauth]
+Oct  3 12:25:33 ubuntu sshd[10690]: Connection closed by 4.3.2.1 port 36810 [preauth]
+Oct  3 12:26:38 ubuntu sshd[10693]: Accepted publickey for ubuntu from 111.240.204.253 port 59853 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 12:26:38 ubuntu sshd[10693]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:26:38 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:26:38 ubuntu systemd-logind[838]: New session 30 of user ubuntu.
+Oct  3 12:26:44 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/chef-client
+Oct  3 12:26:44 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 12:26:45 ubuntu sshd[10746]: Connection closed by 4.3.2.1 port 53253 [preauth]
+Oct  3 12:26:52 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 12:26:55 ubuntu sshd[10729]: Received disconnect from 111.240.204.253 port 59853:11: disconnected by user
+Oct  3 12:26:55 ubuntu sshd[10729]: Disconnected from 111.240.204.253 port 59853
+Oct  3 12:26:55 ubuntu sshd[10693]: pam_unix(sshd:session): session closed for user ubuntu
+Oct  3 12:26:55 ubuntu systemd-logind[838]: Removed session 30.
+Oct  3 12:26:55 ubuntu systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Oct  3 12:27:57 ubuntu sshd[11008]: Connection closed by 4.3.2.1 port 41461 [preauth]
+Oct  3 12:28:41 ubuntu sshd[11010]: Accepted publickey for ubuntu from 111.240.204.253 port 59885 ssh2: RSA SHA256:iNq3JLZvzygwalsC58d6k9cpOCxsbKm7analfJ1+E3c
+Oct  3 12:28:41 ubuntu sshd[11010]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:28:41 ubuntu systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Oct  3 12:28:41 ubuntu systemd-logind[838]: New session 31 of user ubuntu.
+Oct  3 12:28:43 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/chef-client
+Oct  3 12:28:43 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 12:29:01 ubuntu groupadd[11342]: group added to /etc/group: name=elasticsearch, GID=998
+Oct  3 12:29:01 ubuntu groupadd[11342]: group added to /etc/gshadow: name=elasticsearch
+Oct  3 12:29:01 ubuntu groupadd[11342]: new group: name=elasticsearch, GID=998
+Oct  3 12:29:01 ubuntu gpasswd[12249]: members of group elasticsearch set by root to
+Oct  3 12:29:03 ubuntu useradd[12257]: new user: name=elasticsearch, UID=999, GID=998, home=/home/elasticsearch, shell=/bin/bash
+Oct  3 12:29:10 ubuntu sshd[13244]: Connection closed by 4.3.2.1 port 57903 [preauth]
+Oct  3 12:29:21 ubuntu useradd[13740]: new group: name=logstash, GID=997
+Oct  3 12:29:21 ubuntu useradd[13740]: new user: name=logstash, UID=998, GID=997, home=/opt/logstash, shell=/bin/bash
+Oct  3 12:29:32 ubuntu useradd[15562]: new group: name=kibana, GID=996
+Oct  3 12:29:32 ubuntu useradd[15562]: new user: name=kibana, UID=997, GID=996, home=/opt/kibana, shell=/bin/bash
+Oct  3 12:29:43 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 12:30:22 ubuntu sshd[17427]: Connection closed by 4.3.2.1 port 46108 [preauth]
+Oct  3 12:31:32 ubuntu sshd[17432]: Connection closed by 4.3.2.1 port 34314 [preauth]
+Oct  3 12:32:46 ubuntu sshd[17436]: Connection closed by 4.3.2.1 port 50759 [preauth]
+Oct  3 12:33:58 ubuntu sshd[17441]: Connection closed by 4.3.2.1 port 38968 [preauth]
+Oct  3 12:35:12 ubuntu sshd[17446]: Connection closed by 4.3.2.1 port 55412 [preauth]
+Oct  3 12:36:26 ubuntu sshd[17450]: Connection closed by 4.3.2.1 port 43621 [preauth]
+Oct  3 12:37:37 ubuntu sshd[17454]: Connection closed by 4.3.2.1 port 60064 [preauth]
+Oct  3 12:38:48 ubuntu sshd[17458]: Connection closed by 4.3.2.1 port 48278 [preauth]
+Oct  3 12:39:59 ubuntu sshd[17463]: Connection closed by 4.3.2.1 port 36485 [preauth]
+Oct  3 12:41:10 ubuntu sshd[17467]: Connection closed by 4.3.2.1 port 52930 [preauth]
+Oct  3 12:42:21 ubuntu sshd[17472]: Connection closed by 4.3.2.1 port 41138 [preauth]
+Oct  3 12:43:32 ubuntu sshd[17476]: Connection closed by 4.3.2.1 port 57578 [preauth]
+Oct  3 12:44:43 ubuntu sshd[17479]: Connection closed by 4.3.2.1 port 45786 [preauth]
+Oct  3 12:45:54 ubuntu sshd[17484]: Connection closed by 4.3.2.1 port 33998 [preauth]
+Oct  3 12:47:06 ubuntu sshd[17489]: Connection closed by 4.3.2.1 port 50439 [preauth]
+Oct  3 12:48:18 ubuntu sshd[17493]: Connection closed by 4.3.2.1 port 38646 [preauth]
+Oct  3 12:49:30 ubuntu sshd[17497]: Connection closed by 4.3.2.1 port 55093 [preauth]
+Oct  3 12:50:43 ubuntu sshd[17501]: Connection closed by 4.3.2.1 port 43299 [preauth]
+Oct  3 12:51:56 ubuntu sshd[17506]: Connection closed by 4.3.2.1 port 59741 [preauth]
+Oct  3 12:53:08 ubuntu sshd[17511]: Connection closed by 4.3.2.1 port 47949 [preauth]
+Oct  3 12:54:19 ubuntu sshd[17515]: Connection closed by 4.3.2.1 port 36160 [preauth]
+Oct  3 12:55:31 ubuntu sshd[17519]: Connection closed by 4.3.2.1 port 52601 [preauth]
+Oct  3 12:56:42 ubuntu sshd[17523]: Connection closed by 4.3.2.1 port 40809 [preauth]
+Oct  3 12:57:52 ubuntu sshd[17527]: Connection closed by 4.3.2.1 port 57251 [preauth]
+Oct  3 12:59:03 ubuntu sshd[17532]: Connection closed by 4.3.2.1 port 45463 [preauth]
+Oct  3 13:00:14 ubuntu sshd[17536]: Connection closed by 4.3.2.1 port 33673 [preauth]
+Oct  3 13:01:25 ubuntu sshd[17540]: Connection closed by 4.3.2.1 port 50115 [preauth]
+Oct  3 13:02:37 ubuntu sshd[17544]: Connection closed by 4.3.2.1 port 38327 [preauth]
+Oct  3 13:03:48 ubuntu sshd[17548]: Connection closed by 4.3.2.1 port 54770 [preauth]
+Oct  3 13:04:58 ubuntu sshd[17553]: Connection closed by 4.3.2.1 port 42981 [preauth]
+Oct  3 13:06:09 ubuntu sshd[17557]: Connection closed by 4.3.2.1 port 59422 [preauth]
+Oct  3 13:07:21 ubuntu sshd[17561]: Connection closed by 4.3.2.1 port 47629 [preauth]
+Oct  3 13:08:32 ubuntu sshd[17566]: Connection closed by 4.3.2.1 port 35836 [preauth]
+Oct  3 13:09:43 ubuntu sshd[17570]: Connection closed by 4.3.2.1 port 52284 [preauth]
+Oct  3 13:10:56 ubuntu sshd[17575]: Connection closed by 4.3.2.1 port 40488 [preauth]
+Oct  3 13:12:07 ubuntu sshd[17579]: Connection closed by 4.3.2.1 port 56928 [preauth]
+Oct  3 13:13:19 ubuntu sshd[17583]: Connection closed by 4.3.2.1 port 45134 [preauth]
+Oct  3 13:14:31 ubuntu sshd[17588]: Connection closed by 4.3.2.1 port 33340 [preauth]
+Oct  3 13:15:43 ubuntu sshd[17592]: Connection closed by 4.3.2.1 port 49783 [preauth]
+Oct  3 13:16:54 ubuntu sshd[17596]: Connection closed by 4.3.2.1 port 37990 [preauth]
+Oct  3 13:17:01 ubuntu CRON[17599]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct  3 13:17:01 ubuntu CRON[17599]: pam_unix(cron:session): session closed for user root
+Oct  3 13:17:34 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service elasticsearch status
+Oct  3 13:17:34 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 13:17:34 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 13:17:45 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service elasticsearch start
+Oct  3 13:17:45 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 13:17:45 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 13:17:48 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service elasticsearch status
+Oct  3 13:17:48 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 13:18:05 ubuntu sshd[17685]: Connection closed by 4.3.2.1 port 54431 [preauth]
+Oct  3 13:18:09 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 13:19:17 ubuntu sshd[17697]: Connection closed by 4.3.2.1 port 42646 [preauth]
+Oct  3 13:20:28 ubuntu sshd[17701]: Connection closed by 4.3.2.1 port 59086 [preauth]
+Oct  3 13:21:38 ubuntu sshd[17707]: Connection closed by 4.3.2.1 port 47292 [preauth]
+Oct  3 13:22:15 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/etc/init.d ; USER=root ; COMMAND=./elasticsearch start
+Oct  3 13:22:15 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 13:22:15 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 13:22:22 ubuntu sudo:    ubuntu : TTY=pts/0 ; PWD=/etc/init.d ; USER=root ; COMMAND=./elasticsearch status
+Oct  3 13:22:22 ubuntu sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Oct  3 13:22:22 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct  3 13:22:49 ubuntu sshd[17770]: Connection closed by 4.3.2.1 port 35503 [preauth]

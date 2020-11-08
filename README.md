@@ -29,6 +29,10 @@ Some parameters can be modified by importing the values into system environment 
 | ALPHA_SERVER_ENDPOINT  	| Target endpoint to stream the log |
 | ALPHA_SERVER_PORT  	    | Target port to stream the log     |
 
+# Example
+
+To try the demo you can check [this](https://github.com/syhrz/alpha-login-monitor/tree/main/example).
+
 # Todo
 
 This application is not complete yet, there are a few tweaks that can be made:

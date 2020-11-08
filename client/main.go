@@ -62,8 +62,6 @@ func main() {
 	go initializeAuthLogStream(authLogFilePath, numberOfLoginAttemp)
 
 	for thisNumberOfLoginAttemp := range numberOfLoginAttemp {
-		// thisNumberOfLoginAttemp := <-numberOfLoginAttemp
-		// log.Printf("%d", thisNumberOfLoginAttemp)
 		sentMetricstoServer(serverEndpoint, serverPort, thisClientHostname, thisNumberOfLoginAttemp)
 	}
 }

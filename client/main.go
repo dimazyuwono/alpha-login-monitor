@@ -24,7 +24,7 @@ const (
 	defaultServerPort = ":5050"
 
 	// defaultHostname is the default hostname value that will be use to identify the client.
-	defaultHostname = "localhost"
+	defaultClientHostname = "localhost"
 
 	// defaultLoginAttemp is the default login attempt value that will be sent to the server
 	defaultLoginAttempt int32 = 0
@@ -54,6 +54,14 @@ func main() {
 		log.Fatal(err)
 	}
 
+	thisClientHostname, err := os.Hostname()
+	if err != nil {
+		log.Fatal(err)
+		thisClientHostname = defaultClientHostname
+	}
+
+	log.Printf("Client started at %s", thisClientHostname)
+
 	for line := range authLogStream.Lines {
 		fmt.Println(line.Text)
 
@@ -61,21 +69,18 @@ func main() {
 		conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
 		if err != nil {
 			log.Fatalf("did not connect: %v", err)
+		} else {
+			log.Printf("Client connected to %s%s", serverEndpoint, serverPort)
 		}
 		defer conn.Close()
 		c := pb.NewLogStreamerClient(conn)
 
 		// Contact the server and print out its response.
-		thisHostname := defaultHostname
 		thisLoginAttemp := defaultLoginAttempt
-
-		if len(os.Args) > 1 {
-			thisHostname = os.Args[1]
-		}
 
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 		defer cancel()
-		r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: thisHostname, Attemp: thisLoginAttemp})
+		r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: thisClientHostname, Attemp: thisLoginAttemp})
 
 		if err != nil {
 			log.Fatalf("could not stream: %v", err)

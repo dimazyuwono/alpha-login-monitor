@@ -59,21 +59,19 @@ func main() {
 
 	numberOfLoginAttemp := make(chan int32)
 
-	initializeAuthLogStream(authLogFilePath, numberOfLoginAttemp)
+	go initializeAuthLogStream(authLogFilePath, numberOfLoginAttemp)
 
-	log.Printf("Number of login %d", <-numberOfLoginAttemp)
-
-	for {
-		thisNumberOfLoginAttemp := <-numberOfLoginAttemp
-		if thisNumberOfLoginAttemp > 0 {
-			sentMetricstoServer(serverEndpoint, serverPort, thisClientHostname, numberOfLoginAttemp)
-		}
+	for thisNumberOfLoginAttemp := range numberOfLoginAttemp {
+		// thisNumberOfLoginAttemp := <-numberOfLoginAttemp
+		// log.Printf("%d", thisNumberOfLoginAttemp)
+		sentMetricstoServer(serverEndpoint, serverPort, thisClientHostname, thisNumberOfLoginAttemp)
 	}
 }
 
-func sentMetricstoServer(serverEndpoint string, serverPort string, clientHostname string, numberOfLoginAttemp chan int32) {
+func sentMetricstoServer(serverEndpoint string, serverPort string, clientHostname string, numberOfLoginAttemp int32) {
 	// Set up a connection to the server.
-	thisNumberOfLoginAttemp := <-numberOfLoginAttemp
+
+	log.Printf("Trying to start connection to %s%s", serverEndpoint, serverPort)
 
 	conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
 	if err != nil {
@@ -84,13 +82,13 @@ func sentMetricstoServer(serverEndpoint string, serverPort string, clientHostnam
 	defer conn.Close()
 	c := pb.NewLogStreamerClient(conn)
 
-	// Contact the server and print out its response.
+	log.Printf("Sending the message to %s%s", serverEndpoint, serverPort)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
-	r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: clientHostname, Attemp: thisNumberOfLoginAttemp})
+	r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: clientHostname, Attemp: numberOfLoginAttemp})
 
 	if err != nil {
-		log.Fatalf("could not stream: %v", err)
+		log.Fatalf("could not reach server: %v", err)
 	}
 	log.Printf("Response: %s", r.GetMessage())
 }
@@ -106,17 +104,14 @@ func initializeAuthLogStream(authLogFilePath string, numberOfLoginAttemp chan in
 	for line := range authLogStream.Lines {
 		getLoginAttemp, err := regexp.MatchString("Accepted*", line.Text)
 
-		log.Printf("line.Text", line.Text)
-
-		if getLoginAttemp {
+		if err != nil {
+			log.Fatal(err)
+		} else if getLoginAttemp {
+			log.Printf("User login detected")
 			thisNumberOfLoginAttemp++
-			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
-		} else {
-			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
 		}
+
+		log.Printf("Total number %d", thisNumberOfLoginAttemp)
 		numberOfLoginAttemp <- thisNumberOfLoginAttemp
-
 	}
-
-	// time.Sleep(time.Millisecond * 500)
 }

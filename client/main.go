@@ -49,49 +49,74 @@ func main() {
 		serverPort = defaultServerPort
 	}
 
-	authLogStream, err := tail.TailFile(authLogFilePath, tail.Config{Follow: true})
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	thisClientHostname, err := os.Hostname()
 	if err != nil {
 		log.Fatal(err)
 		thisClientHostname = defaultClientHostname
 	}
 
-	log.Printf("Client started at %s", thisClientHostname)
+	log.Printf("Client started at %s reading from %s", thisClientHostname, authLogFilePath)
 
-	for line := range authLogStream.Lines {
-		thisLoginAttemp := defaultLoginAttempt
-		getLoginAttemp, err := regexp.MatchString("Accepted*", line.Text)
+	numberOfLoginAttemp := make(chan int32)
 
-		if getLoginAttemp {
-			thisLoginAttemp++
-			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
-		}
+	initializeAuthLogStream(authLogFilePath, numberOfLoginAttemp)
 
-		if thisLoginAttemp > 0 {
-			// Set up a connection to the server.
-			conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
-			if err != nil {
-				log.Fatalf("did not connect: %v", err)
-			} else {
-				log.Printf("Client connected to %s%s", serverEndpoint, serverPort)
-			}
-			defer conn.Close()
-			c := pb.NewLogStreamerClient(conn)
+	log.Printf("Number of login %d", <-numberOfLoginAttemp)
 
-			// Contact the server and print out its response.
-
-			ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-			defer cancel()
-			r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: thisClientHostname, Attemp: thisLoginAttemp})
-
-			if err != nil {
-				log.Fatalf("could not stream: %v", err)
-			}
-			log.Printf("Response: %s", r.GetMessage())
+	for {
+		thisNumberOfLoginAttemp := <-numberOfLoginAttemp
+		if thisNumberOfLoginAttemp > 0 {
+			sentMetricstoServer(serverEndpoint, serverPort, thisClientHostname, numberOfLoginAttemp)
 		}
 	}
+}
+
+func sentMetricstoServer(serverEndpoint string, serverPort string, clientHostname string, numberOfLoginAttemp chan int32) {
+	// Set up a connection to the server.
+	thisNumberOfLoginAttemp := <-numberOfLoginAttemp
+
+	conn, err := grpc.Dial(serverEndpoint+serverPort, grpc.WithInsecure(), grpc.WithBlock())
+	if err != nil {
+		log.Fatalf("did not connect: %v", err)
+	} else {
+		log.Printf("Client connected to %s%s", serverEndpoint, serverPort)
+	}
+	defer conn.Close()
+	c := pb.NewLogStreamerClient(conn)
+
+	// Contact the server and print out its response.
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	defer cancel()
+	r, err := c.StreamLog(ctx, &pb.LogStreamRequest{Hostname: clientHostname, Attemp: thisNumberOfLoginAttemp})
+
+	if err != nil {
+		log.Fatalf("could not stream: %v", err)
+	}
+	log.Printf("Response: %s", r.GetMessage())
+}
+
+func initializeAuthLogStream(authLogFilePath string, numberOfLoginAttemp chan int32) {
+	authLogStream, err := tail.TailFile(authLogFilePath, tail.Config{Follow: true})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	thisNumberOfLoginAttemp := defaultLoginAttempt
+
+	for line := range authLogStream.Lines {
+		getLoginAttemp, err := regexp.MatchString("Accepted*", line.Text)
+
+		log.Printf("line.Text", line.Text)
+
+		if getLoginAttemp {
+			thisNumberOfLoginAttemp++
+			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
+		} else {
+			log.Printf("getLoginAttemp:", getLoginAttemp, "Error:", err)
+		}
+		numberOfLoginAttemp <- thisNumberOfLoginAttemp
+
+	}
+
+	// time.Sleep(time.Millisecond * 500)
 }

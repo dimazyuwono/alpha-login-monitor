@@ -42,11 +42,11 @@ func main() {
 		serverPort = defaultServerPort
 	}
 
-	log.Printf("Alpha server started at %s%s\n", serverEndpoint, serverPort)
-
 	lis, err := net.Listen("tcp", serverPort)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
+	} else {
+		log.Printf("Alpha server started at %s%s\n", serverEndpoint, serverPort)
 	}
 
 	s := grpc.NewServer()
